@@ -41,12 +41,17 @@
                         <h4>Enter your bills</h4>
                         <h4>Bill name</h4>
                         <asp:TextBox ID="BillNameTextbox" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="BillNameRequiredValidator" runat="server" ControlToValidate="BillNameTextbox" ErrorMessage="Please enter the bills name">*</asp:RequiredFieldValidator>
                         <h4>Bill total</h4>
                         <asp:TextBox ID="BillTotalTextbox" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="BillTotalRequiredValidator" runat="server" ControlToValidate="BillTotalTextbox" ErrorMessage="Enter a number">*</asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="BillTotalRangeValidator" runat="server" ControlToValidate="BillTotalTextbox" ErrorMessage="Must be a positve number" MinimumValue="0" Type="Double">*</asp:RangeValidator>
                         <br />
                         <br />
                         <asp:Button ID="BillButton" class="btn btn-warning" runat="server" Text="Submit" OnClick="BillButton_Click" />
-                        <div class="hline"></div>
+                        <div class="hline">
+                            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                        </div>
                         <h4>Bills</h4>
                         <br />
                         <h4><asp:Label ID="BillsLabel" runat="server" Text=""></asp:Label></h4>
@@ -56,8 +61,6 @@
                         <br />
                         <h4><asp:Label ID="MoneyRemaining" runat="server" Text=""></asp:Label></h4>
                         <div class="hline"></div>
-                        <br />
-                        <asp:Button ID="ResetButton" class="btn btn-warning" runat="server" Text="Reset" OnClick="ResetButton_Click" />
                     </div>
                 </div>
             </div>

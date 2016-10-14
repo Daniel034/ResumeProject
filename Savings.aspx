@@ -36,6 +36,8 @@
                         <asp:RequiredFieldValidator ID="SavingsRequiredFieldValidator1" runat="server" ControlToValidate="SavingsTextBox" ErrorMessage="Enter a whole number">*</asp:RequiredFieldValidator>
                         <asp:TextBox ID="SavingsTextBox" runat="server"></asp:TextBox>
                         <asp:Button ID="SavingsButton" class="btn btn-warning" runat="server" Text="Submit" OnClick="SavingsButton_Click" />
+                        <br />
+                        <asp:ValidationSummary ID="SavingsValidation" runat="server" />
                     </div>
                 </div>
             </div>

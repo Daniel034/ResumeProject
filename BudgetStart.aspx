@@ -34,6 +34,8 @@
                         <asp:RequiredFieldValidator ID="NameRequiredFieldValidator1" runat="server" ControlToValidate="NameTextBox" ErrorMessage="Enter a Name">*</asp:RequiredFieldValidator>
                         <asp:TextBox ID="NameTextBox" runat="server"></asp:TextBox>
                         <asp:Button ID="NameButton" class="btn btn-warning" runat="server" Text="Submit" OnClick="NameButton_Click" />
+                        <br />
+                        <asp:ValidationSummary ID="NameValidation" runat="server" />
                     </div>
                 </div>
             </div>

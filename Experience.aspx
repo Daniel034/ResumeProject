@@ -87,14 +87,13 @@
                     <div class="row">
                         <div class="col-lg-6">
 
-                            <img class="img-responsive img-rounded" src="assets/img/agency.jpg" alt="">
+                            <img src="assets/img/leader.JPG" class="img-responsive img-rounded"/>
                         </div>
 
                         <div class="col-lg-6">
                             <h4>My Education and Carrer</h4>
-                            <p></p>
-                            <p>Some more stuff</p
-                            <p>Other things</p>
+                            <p>I am currently finishing my degree at Oklahoma State University with a Bachelors in Managment Information Systems and a Minor in Information Asssurance. My education career has led me to find that my true passion is development for the end user to make their expeience the best it can be.</p>
+                            <p>While persuing my degree I worked at Best Buy in various positions that gave me a wider view of the working of the orginization.</p>
                             <p>
                                 <br />
                             </p>
@@ -130,7 +129,6 @@ Education
                                 <!-- he view -->
                             </div>
                             <!-- he wrap -->
-                            <!--make the first image be a slideshow of school logos-->
                             <h4>Tulsa Community College</h4>
                             <p>Early in my college carrer I took classes part time at TCC to complete most of my general education and decide on my major. After a year I transitioned to NOC.</p>
                             <br />

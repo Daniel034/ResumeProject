@@ -1,0 +1,363 @@
+﻿/*Body tag with percentage widths*/
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*CSS definitions for a landscape card
+    DO NOT TOUCH THIS*/
+/*overflow hidden makes extra content not stretch box*/
+/*min and max heigh/width ensure that the boxes do not get smaller than they should be*/
+.landscapeCard
+{
+    height: 200px;
+    min-height: 200px;
+    width: 350px;
+    min-width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*CSS definitions for a portrait card
+    DO NOT TOUCH THIS*/
+.portraitCard
+{
+    height: 350px;
+    min-height: 350px;
+    width: 200px;
+    min-width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Default background color class*/
+.backgroundColor
+{
+    background-color: tan;
+}
+/*Default background color of the card class*/
+.cardBackgroundColor
+{
+    background-color: white;
+}
+
+/*Add a shadow to an item*/
+.dropShadow
+{
+   box-shadow: 10px 10px 5px #888888;
+}
+
+/*CSS code to make the borders of boxes not count on top of the size of the box itself*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/* Set all the changes between styles to transition slowly*/
+div {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* boxes for the back of the card*/
+.smallBox
+{
+    position:relative;
+    width:100%;
+    height:23.33333333333%;
+    border-width:3px;
+    border-color:white;
+}
+
+.largeBox
+{
+    position:relative;
+    width:100%;
+    height:30%;
+    border-width:3px;
+    border-color:white;
+}
+.cardFrontRight
+{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    background-color:white;
+}
+.cardFrontLeft
+ {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    height: 40%;
+    width: 50%;
+    border-style: none;
+    float: left;
+    background-color: black;
+}
+.cardFrontLeftLarge
+{
+    position:relative;
+    width:175px;
+    height:80px;
+    background-color:black;
+}
+.cardFrontLeftSmall
+{
+    position:relative;
+    height:40px;
+    width:175px;
+    background-color:black;
+}
+.leftBox
+{
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50%;
+    border-style: none;
+    float: left;
+}
+.frontRightLarge
+{
+    position:relative;
+    width:100%;
+    height:40%;
+    background-color:black;
+}
+.frontRightSmall
+{
+    position:relative;
+    width:100%;
+    height:20%;
+    background-color:white;
+}
+.rightBox
+{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+.frontSmall
+{
+    height:100%;
+    width:12.5%;
+    position:relative;
+    border:none;
+    float:left;
+}
+/*text rules*/
+.iSizeLarge
+{
+    font-size:10px;
+}
+.iSizeLarger
+{
+    font-size:18px;
+}
+.textAlignLeft
+{
+    text-align:left;
+}
+.textIndent10
+{
+    text-indent:3px;
+}
+.whiteText
+{
+    color:white;
+    font-size:10px;
+    font-family:'Century Gothic';
+    font-weight:bolder;
+}
+.blackText
+{
+    color:black;
+    font-size:10px;
+    font-family:'Century Gothic';
+    font-weight:bolder;
+}
+h1
+{
+    font-size:12px;
+    text-align: left;
+    font-family:'Century Gothic';
+    font-weight:bolder;
+    color:slategray;
+}
+h2
+{
+    font-size:10px;
+    text-align:left;
+    font-family:'Century Gothic';
+    font-weight:bolder;
+    color:lightgray;
+}
+.fontLarge
+{
+    font-size:10px;
+    color:lightgray;
+}
+.fontLarger
+{
+    font-size:14px;
+    color:slategrey;
+}
+/*background colors for the individual boxes*/
+.yellowBox
+{
+    background-color:yellow;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:2px;
+    border-left-width:2px;
+    border-top-width:1px;
+    border-right-width:1px;
+}
+.pinkBox
+{
+    background-color:hotpink;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:1px;
+    border-left-width:2px;
+    border-top-width:2px;
+    border-right-width:1px;
+}
+.greenBox
+{
+    background-color:lawngreen;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:1px;
+    border-left-width:2px;
+    border-top-width:1px;
+    border-right-width:1px;
+}
+.purpleBox
+{
+    background-color:rebeccapurple;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-top-width:2px;
+    border-right-width:2px;
+}
+.orangeBox
+{
+    background-color:orange;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-top-width:1px;
+    border-right-width:2px;
+}
+.redBox
+{
+    background-color:red;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-top-width:1px;
+    border-right-width:2px;
+}
+.blueBox
+{
+    background-color:cornflowerblue;
+    border-color:white;
+    border-style:solid;
+    border-bottom-width:2px;
+    border-left-width:1px;
+    border-top-width:1px;
+    border-right-width:2px;
+}
+.pinkFront
+{
+    background-color:hotpink;
+    border:none;
+}
+.greenFront
+{
+    background-color:lawngreen;
+    border:none;
+}
+.purpleFront
+{
+    background-color:rebeccapurple;
+    border:none;
+}
+.yellowFront
+{
+    background-color:yellow;
+    border:none;
+}
+.orangeFront
+{
+    background-color:orange;
+    border:none;
+}
+.blueFront
+{
+    background-color:cornflowerblue;
+    border:none;
+}
+.redFront
+{
+    background-color:red;
+    border:none;
+}
+.whiteFront
+{
+    background-color:white;
+    border:none;
+}
+.blackBackground
+{
+    background-color:black;
+}
+/*positioning*/
+.middleAll
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.middleLeft
+{
+    position:absolute;
+    bottom:15px;
+    left:20px;
+}
+.middleLarge
+{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+}
+#i
+{
+    color:white;
+}
+QR
+{
+    position:absolute;
+}
